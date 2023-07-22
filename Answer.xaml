@@ -1,0 +1,26 @@
+﻿<Page x:Class="WeatherProg.Answer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WeatherProg"
+      mc:Ignorable="d" 
+      d:DesignHeight="713" d:DesignWidth="500"
+      Title="Answer" Loaded="Page_Loaded">
+
+  <Grid Background="#3736fa">
+    <StackPanel>
+      <Image x:Name="Sunny" Source="/sun.png" Height="220" Width="220" HorizontalAlignment="Center" Margin="0, 35, 0, 20" Visibility="Collapsed"/>
+      <Image x:Name="Cloudy" Source="/cloud.png" Height="220" Width="220" HorizontalAlignment="Center" Margin="0, 35, 0, 20" Visibility="Collapsed"/>
+      <Image x:Name="Snowy" Source="/snow.png" Height="210" Width="210" HorizontalAlignment="Center" Margin="0, 40, 0, 25" Visibility="Collapsed"/>
+      <Image x:Name="Rainy" Source="/rain.png" Height="205" Width="204" HorizontalAlignment="Center" Margin="0, 40, 0, 25" Visibility="Collapsed"/>
+      <TextBlock x:Name="City" Text = "" Margin="30, 0, 30, 0" FontSize="50" Foreground="#FFFCFBFB" FontFamily="Bahnschrift Light Condensed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+      <TextBlock x:Name="Temp" Text=""  Margin="30, 0" FontSize="70" Foreground="#FFFCFBFB" FontFamily="Bahnschrift Light Condensed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+      <TextBlock x:Name="FeelsLikeTemp" Text="" FontSize="20" Foreground="#FFFCFBFB" FontFamily="Bahnschrift Light Condensed" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic"/>
+      <TextBlock x:Name="Press" Text="" Margin="15, 25, 0, 0" FontSize="30" Foreground="#FFFCFBFB" FontFamily="Franklin Gothic Demi"/>
+      <TextBlock x:Name="Sunr" Text ="" Margin="15, 15, 0, 0" FontSize="30" Foreground="#FFFCFBFB" FontFamily="Franklin Gothic Demi"/>
+      <TextBlock x:Name="Suns"  Text ="" Margin="15, 15, 0, 0" FontSize="30" Foreground="#FFFCFBFB" FontFamily="Franklin Gothic Demi"/>
+      <Button Content="Назад" Click="ToBack_Click" HorizontalAlignment="Center" Margin="0, 15, 0, 10" x:Name="ToBack" Background="Blue"/>
+    </StackPanel>
+  </Grid>
+</Page>
